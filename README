@@ -1,0 +1,16 @@
+This repository contains all the scripts required to reproduce results from
+this paper:
+
+	Sébastien Boisvert, Frédéric Raymond, Élénie Godzaridis, François Laviolette, Jacques Corbeil
+	Scalable de novo metagenome assembly and profiling
+	in revision, $journalName, 2012
+
+Ray Meta and Ray Communities are available from:
+	
+	- http://denovoassembler.sourceforge.net/
+
+If you feel adventurous or you want to try the development version,
+you will need these git repositories:
+
+	- https://github.com/sebhtml/ray
+	- https://github.com/sebhtml/RayPlatform
