@@ -1,0 +1,59 @@
+To run Ray on all these 765 samples, we used SilverRay.
+SilverRay calls Ray Meta and Ray Communities with a 
+dynamically generated command.
+
+SilverRay is a very small script that lists the sequence files
+from a sample directory, and generates the ray command (mpiexec -n XYZ Ray ...)
+to assemble with Ray Meta and to profile with Ray Communities.
+
+
+To run the scripts in this directory, you need to get NGS-Pipelines
+which includes SilverRay.
+
+You will also need to install a driver in Drivers to tell where is your
+taxonomy, your reference sequences, and so on.
+
+
+
+Example:
+
+source /rap/nne-790-ab/software/NGS-Pipelines/LoadModules.sh
+
+SilverRay 31 SRS065335 64 SRS065335-Ray-2012-09-08.1
+
+
+
+	generates this command:
+
+
+mpiexec -n 64 Ray \
+ -o \
+ Assembly \
+ -k \
+ 31 \
+ -p \
+ Sample/SRR062290_1.fastq.gz \
+ Sample/SRR062290_2.fastq.gz \
+ -p \
+ Sample/SRR062293_1.fastq.gz \
+ Sample/SRR062293_2.fastq.gz \
+ -search \
+ /rap/nne-790-ab/genomes/EMBL_CDS+GO/EMBL_CDS_Sequences \
+ -gene-ontology \
+ /rap/nne-790-ab/genomes/EMBL_CDS+GO/000-Ontologies.txt \
+ /rap/nne-790-ab/genomes/EMBL_CDS+GO/000-Annotations.txt \
+ -search \
+ /rap/nne-790-ab/genomes/RayKmerSearchStuff/last-build/ARDB \
+ -search \
+ /rap/nne-790-ab/genomes/RayKmerSearchStuff/last-build/Bacteria-Genomes \
+ -search \
+ /rap/nne-790-ab/genomes/RayKmerSearchStuff/last-build/HumanChromosomes \
+ -search \
+ /rap/nne-790-ab/genomes/RayKmerSearchStuff/last-build/NCBI-Bacteria_DRAFT \
+ -search \
+ /rap/nne-790-ab/genomes/RayKmerSearchStuff/last-build/Viruses-Genomes \
+ -with-taxonomy \
+ /rap/nne-790-ab/genomes/taxonomy/last-build/Genome-to-Taxon.tsv \
+ /rap/nne-790-ab/genomes/taxonomy/last-build/TreeOfLife-Edges.tsv \
+ /rap/nne-790-ab/genomes/taxonomy/last-build/Taxon-Names.tsv
+
