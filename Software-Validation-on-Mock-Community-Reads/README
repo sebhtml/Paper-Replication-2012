@@ -1,0 +1,34 @@
+To validate our software tool, we used
+
+	HMMC - Mock Community 16S & WGS Reads
+
+
+available at
+
+	http://hmpdacc.org/HMMC/
+
+The project is called "Mock community WGS pilot project" and is at
+
+	http://www.ncbi.nlm.nih.gov/bioproject/48475
+
+
+
+There are 4 samples:
+
+- SRX055380
+Illumina sequencing of HMP Mock Community even sample
+
+- SRX055381
+Illumina sequencing of HMP Mock Community staggered sample
+
+- SRX030841
+454 Sequencing of HMP Mock Community even sample
+
+- SRX030842
+454 Sequencing of HMP Mock Community staggered sample
+
+
+Reference:
+
+	Supplementary Table 5 and fetch-answer.sh
+	http://www.nature.com/nature/journal/v486/n7402/full/nature11209.html#/supplementary-information
