@@ -1,0 +1,3 @@
+The overlap between assemblies produced by Ray Meta and MetaVelvet
+was done with virtual coloring implemented in Ray. This gives the number
+of k-mers unique in each assembly and the number of shared k-mers.
