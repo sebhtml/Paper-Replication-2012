@@ -1,0 +1,9 @@
+The 124 samples from Qin et al. were assembled with Ray Meta
+and profiled with Ray Communities.
+
+SilverRay was used to generate the command line automatically (enumerating the fastq files).
+
+SilverRay is part of the NGS-Pipelines project.
+
+See https://github.com/sebhtml/NGS-Pipelines
+
