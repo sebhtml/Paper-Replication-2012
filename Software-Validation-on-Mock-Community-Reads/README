@@ -32,3 +32,8 @@ Reference:
 
 	Supplementary Table 5 and fetch-answer.sh
 	http://www.nature.com/nature/journal/v486/n7402/full/nature11209.html#/supplementary-information
+
+
+Job files were generated with the provided template.
+
+/mnt/scratch_mp2/corbeil/corbeil_group/software/NGS-Pipelines/GenerateScripts.sh Template.sh SampleList.txt qsub
