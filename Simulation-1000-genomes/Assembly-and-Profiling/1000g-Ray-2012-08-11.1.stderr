@@ -1,0 +1,17 @@
+mpiexec: killing job...
+
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 0 with PID 25367 on node r110-n7 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpiexec: abort is already in progress...hit ctrl-c again to forcibly terminate
+
+mpiexec: clean termination accomplished
+
+/bin/bash: module: line 1: syntax error: unexpected end of file
+/bin/bash: module: line 1: syntax error: unexpected end of file
+/bin/bash: module: line 1: syntax error: unexpected end of file
+/bin/bash: module: line 1: syntax error: unexpected end of file
+/bin/bash: error importing function definition for `module'
+/bin/bash: error importing function definition for `module'
+/bin/bash: error importing function definition for `module'
+/bin/bash: error importing function definition for `module'
