@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -N SRX030841.Ray-Communities-2012-10-02.2
+#PBS -N SRX030841.Ray-Communities-2012-10-02.3
 #PBS -q qwork@mp2
 #PBS -l nodes=3:ppn=1
 #PBS -l walltime=48:00:00
@@ -9,9 +9,12 @@ cd $PBS_O_WORKDIR
 
 root=/mnt/scratch_mp2/corbeil/corbeil_group/genomes/
 
-mpiexec -n 72 Ray \
+mpiexec -n 48 \
+-bynode \
+-output-filename SRX030841.Ray-Communities-2012-10-02.3 \
+Ray \
  -o \
- SRX030841.Ray-Communities-2012-10-02.2 \
+ SRX030841.Ray-Communities-2012-10-02.3 \
  -k \
  31 \
  -s SRX030841.fastq.gz \
