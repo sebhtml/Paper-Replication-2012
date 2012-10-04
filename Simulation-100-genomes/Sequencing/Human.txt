@@ -1,0 +1,11 @@
+HumanChromosome_7	0.000443918
+HumanChromosome_19	0.000360161
+HumanChromosome_1	0.000319402
+HumanChromosome_X	0.000247389
+HumanChromosome_16	0.000232539
+HumanChromosome_4	9.98514e-05
+HumanChromosome_Y	4.862e-05
+HumanChromosome_X	1.43059e-05
+HumanChromosome_2	1.1942e-05
+HumanChromosome_7	1.0777e-05
+HumanChromosome_Y	2.72932e-06

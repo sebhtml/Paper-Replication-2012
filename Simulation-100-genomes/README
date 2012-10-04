@@ -1,0 +1,18 @@
+
+400000000 reads
+
+4000000 reads for human
+
+1% human, 396000000 reads for bacteria
+
+2. x100g
+
+400000006 101-nt sequences (40 Gb) 
+paired 
+0.25% mismatch
+100 bacterial genomes
+1% human
+12 GiB compressed bz2
+
+
+VirtualNextGenSequencer is available at https://github.com/sebhtml/paired-read-simulator
