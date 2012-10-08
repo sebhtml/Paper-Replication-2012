@@ -23,4 +23,4 @@ Ray \
 -p Reads/ERR011104_1.fastq.gz Reads/ERR011104_2.fastq.gz \
 -one-color-per-file
 
-mv ERS006497-overlaps-2012-10-06.1.* RayOutput
+mv ERS006497-overlaps-2012-10-06.1.* ERS006497-overlaps-2012-10-06.1

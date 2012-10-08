@@ -22,5 +22,4 @@ Ray \
 -p Reads/SRR346687_1.fastq.gz Reads/SRR346687_2.fastq.gz \
 -one-color-per-file
 
-mv SRS018661-overlaps-2012-10-06.1.* RayOutput
-
+mv SRS018661-overlaps-2012-10-06.1.* SRS018661-overlaps-2012-10-06.1
