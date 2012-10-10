@@ -1,0 +1,16 @@
+This is for building input files for gene ontology profiling
+with Ray Ontologies.
+
+To build the thing, run:
+
+	./Main.sh
+
+
+
+Testing department:
+
+Tester: Sébastien Boisvert
+Date: 2012-10-10
+Result: [ ] PASS
+        [ ] FAIL
+
