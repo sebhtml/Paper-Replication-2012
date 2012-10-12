@@ -25,7 +25,6 @@ class Table:
 			print("Illumina: "+self.illuminaResults)
 			print("454: "+self.the454Results)
 
-		self.total=0
 		for line in open(self.expectedResults):
 			if line[0]=='#':
 				continue
@@ -34,7 +33,6 @@ class Table:
 
 			tokens=line.split("\t")
 			entry['count']=int(tokens[1])
-			self.total+=entry['count']
 
 			entry['name']=tokens[0]
 
@@ -42,12 +40,23 @@ class Table:
 
 			self.expectedObjects.append(entry)
 
+		self.total=0
+
+		self.loadObjects()
 
 		self.loadMetafile(self.illuminaKey,self.illuminaResults)
 		self.loadMetafile(self.the454Key,self.the454Results)
 
 		for entry in self.expectedObjects:
-			entry['expected'] = (0.0+entry['count'])/self.total
+			entry['normalized']=0
+
+			if entry['copies']!=0:
+				entry['normalized']=(entry['count']+0.0)/entry['copies']*entry['size']
+
+			self.total+=entry['normalized']
+
+		for entry in self.expectedObjects:
+			entry['expected'] = (0.0+entry['normalized'])/self.total
 
 		for entry in self.expectedObjects:
 
@@ -133,6 +142,22 @@ class Table:
 			entry[name+"-objects"]=[]
 
 		entry[name+"-objects"].append(theName+"="+str(value))
+
+	def loadObjects(self):
+		index=0
+		for line in open("Objects.txt"):
+			if line[0]=="#":
+				continue
+
+			tokens=line.split("\t")
+	
+			copies=int(tokens[1])
+			size=float(tokens[2])
+
+			self.expectedObjects[index]['copies']=copies
+			self.expectedObjects[index]['size']=size
+		
+			index+=1
 
 even=Table("Even.Expected.txt","Even.Actual-Illumina.txt","Even.Actual-454.txt")
 

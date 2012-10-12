@@ -1,7 +1,7 @@
 # Organism (strain#)-Target 16S copies in PCR
-Acinetobacter baumanii (ATCC 17978)	100000
+Acinetobacter baumannii (ATCC 17978)	100000
 Actinomyces odontolyticus (ATCC 17982)	100000
-Bacillus cereus(ATCC 10987)	100000
+Bacillus cereus (ATCC 10987)	100000
 Bacteroides vulgatus (ATCC 8482)	100000
 Candida albicans (SC5314)	1120
 Clostridium beijerinckii (ATCC 51743)	100000
