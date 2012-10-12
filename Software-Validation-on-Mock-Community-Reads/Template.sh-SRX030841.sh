@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -N SRX030841.Ray-Communities-2012-10-05.3
-#PBS -o SRX030841.Ray-Communities-2012-10-05.3.stdout
-#PBS -e SRX030841.Ray-Communities-2012-10-05.3.stderr
+#PBS -N SRX030841.Ray-Communities-2012-10-11.1
+#PBS -o SRX030841.Ray-Communities-2012-10-11.1.stdout
+#PBS -e SRX030841.Ray-Communities-2012-10-11.1.stderr
 #PBS -A nne-790-ab
 #PBS -l walltime=48:00:00
 #PBS -l nodes=4:ppn=8
@@ -15,10 +15,10 @@ root=/rap/nne-790-ab/genomes/
 
 mpiexec -n 48 \
 -bynode \
--output-filename SRX030841.Ray-Communities-2012-10-05.3 \
+-output-filename SRX030841.Ray-Communities-2012-10-11.1 \
 Ray \
  -o \
- SRX030841.Ray-Communities-2012-10-05.3 \
+ SRX030841.Ray-Communities-2012-10-11.1 \
  -k \
  31 \
  -s SRX030841.fastq.gz \
