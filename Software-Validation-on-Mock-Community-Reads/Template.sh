@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -N __SAMPLE__.Ray-Communities-2012-10-13.1
-#PBS -o __SAMPLE__.Ray-Communities-2012-10-13.1.stdout
-#PBS -e __SAMPLE__.Ray-Communities-2012-10-13.1.stderr
+#PBS -N __SAMPLE__.Ray-Communities-2012-10-14.1
+#PBS -o __SAMPLE__.Ray-Communities-2012-10-14.1.stdout
+#PBS -e __SAMPLE__.Ray-Communities-2012-10-14.1.stderr
 #PBS -A nne-790-ab
 #PBS -l walltime=48:00:00
 #PBS -l nodes=4:ppn=8
@@ -14,10 +14,10 @@ cd $PBS_O_WORKDIR
 root=/rap/nne-790-ab/genomes/
 
 mpiexec -n 32 \
--output-filename __SAMPLE__.Ray-Communities-2012-10-13.1 \
+-output-filename __SAMPLE__.Ray-Communities-2012-10-14.1 \
 Ray \
  -o \
- __SAMPLE__.Ray-Communities-2012-10-13.1 \
+ __SAMPLE__.Ray-Communities-2012-10-14.1 \
  -k \
  31 \
  -s __SAMPLE__.fastq.gz \
@@ -41,5 +41,5 @@ Ray \
  $root/taxonomy/last-build/TreeOfLife-Edges.tsv \
  $root/taxonomy/last-build/Taxon-Names.tsv
 
-mv __SAMPLE__.Ray-Communities-2012-10-13.1.* __SAMPLE__.Ray-Communities-2012-10-13.1
+mv __SAMPLE__.Ray-Communities-2012-10-14.1.* __SAMPLE__.Ray-Communities-2012-10-14.1
 
