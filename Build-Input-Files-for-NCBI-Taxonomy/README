@@ -13,16 +13,7 @@ features (called Ray Communities):
 
 To download the NCBI taxonomy and generate required files:
 
-Get a copy of ray:
-
-
-   git clone git://github.com/sebhtml/ray.git
-
-
-Add this to your PATH:
-
-        export PATH=~/git-clones/ray/scripts/NCBI-Taxonomy/:$PATH
-
+        export PATH=~/git-clones/Paper-Replication-2012/Build-Input-Files-for-NCBI-Taxonomy
 
 Then, run this:
 

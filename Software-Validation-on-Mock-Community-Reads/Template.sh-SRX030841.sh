@@ -1,20 +1,23 @@
 #!/bin/bash
-#PBS -N SRX030841.Ray-Communities-2012-10-02.3
-#PBS -q qwork@mp2
-#PBS -l nodes=3:ppn=1
+#PBS -N SRX030841.Ray-Communities-2012-10-13.1
+#PBS -o SRX030841.Ray-Communities-2012-10-13.1.stdout
+#PBS -e SRX030841.Ray-Communities-2012-10-13.1.stderr
+#PBS -A nne-790-ab
 #PBS -l walltime=48:00:00
+#PBS -l nodes=4:ppn=8
 cd $PBS_O_WORKDIR
 
-. /mnt/scratch_mp2/corbeil/corbeil_group/software/NGS-Pipelines/LoadModules.sh
+#. /mnt/scratch_mp2/corbeil/corbeil_group/software/NGS-Pipelines/LoadModules.sh
+. /rap/nne-790-ab/software/NGS-Pipelines/LoadModules.sh
 
-root=/mnt/scratch_mp2/corbeil/corbeil_group/genomes/
+#root=/mnt/scratch_mp2/corbeil/corbeil_group/genomes/
+root=/rap/nne-790-ab/genomes/
 
-mpiexec -n 48 \
--bynode \
--output-filename SRX030841.Ray-Communities-2012-10-02.3 \
+mpiexec -n 32 \
+-output-filename SRX030841.Ray-Communities-2012-10-13.1 \
 Ray \
  -o \
- SRX030841.Ray-Communities-2012-10-02.3 \
+ SRX030841.Ray-Communities-2012-10-13.1 \
  -k \
  31 \
  -s SRX030841.fastq.gz \
@@ -38,4 +41,5 @@ Ray \
  $root/taxonomy/last-build/TreeOfLife-Edges.tsv \
  $root/taxonomy/last-build/Taxon-Names.tsv
 
+mv SRX030841.Ray-Communities-2012-10-13.1.* SRX030841.Ray-Communities-2012-10-13.1
 

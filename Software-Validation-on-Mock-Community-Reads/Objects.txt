@@ -1,0 +1,23 @@
+# Organism (strain#)- copies - genome size (Mb)
+Acinetobacter baumannii (ATCC 17978)	5	4.02
+Actinomyces odontolyticus (ATCC 17982)	3	2.39
+Bacillus cereus (ATCC 10987)	12	5.43
+Bacteroides vulgatus (ATCC 8482)	7	5.16
+Candida albicans (SC5314)	0	27.56
+Clostridium beijerinckii (ATCC 51743)	14	6
+Deinococcus radiodurans (DSM 20539)	3	3.28
+Enterococcus faecalis (ATCC 47077)	4	3.36
+Escherichia coli (ATCC 70096)	7	4.6
+Helicobacter pylori (ATCC 700392)	2	1.66
+Lactobacillus gasseri (DSM 20243)	6	1.89
+Listeria monocytogenes (ATCC BAA-679)	6	2.94
+Methanobrevibacter smithii (ATCC 35061)	2	1.85
+Neisseria meningitidis (ATCC BAA-335)	4	2.27
+Propionibacterium acnes (DSM 16379)	3	2.56
+Pseudomonas aeruginosa (ATCC 47085)	4	6.26
+Rhodobacter sphaeroides (ATCC 17023)	3	4.6
+Staphylococcus aureus (ATCC BAA-1718)	5	2.94
+Staphylococcus epidermidis (ATCC 12228)	5	2.49
+Streptococcus agalactiae (ATCC BAA-611)	7	2.16
+Streptococcus mutans (ATCC 700610)	5	2.03
+Streptococcus pneumoniae (ATCC BAA-334)	4	2.16

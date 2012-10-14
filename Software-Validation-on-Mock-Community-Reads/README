@@ -37,3 +37,8 @@ Reference:
 Job files were generated with the provided template.
 
 /mnt/scratch_mp2/corbeil/corbeil_group/software/NGS-Pipelines/GenerateScripts.sh Template.sh SampleList.txt qsub
+
+
+
+To extract profiles from XML files, use Convert.sh
+
