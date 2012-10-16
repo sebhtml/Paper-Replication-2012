@@ -1,9 +1,9 @@
 #!/bin/bash
-#PBS -N SRX055380.Ray-Communities-2012-10-14.1
-#PBS -o SRX055380.Ray-Communities-2012-10-14.1.stdout
-#PBS -e SRX055380.Ray-Communities-2012-10-14.1.stderr
+#PBS -N SRX055380.Ray-Communities-2012-10-16.1-32
+#PBS -o SRX055380.Ray-Communities-2012-10-16.1-32.stdout
+#PBS -e SRX055380.Ray-Communities-2012-10-16.1-32.stderr
 #PBS -A nne-790-ab
-#PBS -l walltime=48:00:00
+#PBS -l walltime=16:00:00
 #PBS -l nodes=4:ppn=8
 cd $PBS_O_WORKDIR
 
@@ -14,12 +14,12 @@ cd $PBS_O_WORKDIR
 root=/rap/nne-790-ab/genomes/
 
 mpiexec -n 32 \
--output-filename SRX055380.Ray-Communities-2012-10-14.1 \
+-output-filename SRX055380.Ray-Communities-2012-10-16.1-32 \
 Ray \
  -o \
- SRX055380.Ray-Communities-2012-10-14.1 \
+ SRX055380.Ray-Communities-2012-10-16.1-32 \
  -k \
- 31 \
+ 21 \
  -s SRX055380.fastq.gz \
   -search \
  $root/EMBL_CDS+GO/EMBL_CDS_Sequences \
@@ -41,5 +41,5 @@ Ray \
  $root/taxonomy/last-build/TreeOfLife-Edges.tsv \
  $root/taxonomy/last-build/Taxon-Names.tsv
 
-mv SRX055380.Ray-Communities-2012-10-14.1.* SRX055380.Ray-Communities-2012-10-14.1
+mv SRX055380.Ray-Communities-2012-10-16.1-32.* SRX055380.Ray-Communities-2012-10-16.1-32
 

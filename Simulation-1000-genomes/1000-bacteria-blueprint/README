@@ -1,0 +1,14 @@
+1 flowcell: 3 000 000 000 sequences
+            1 500 000 000 pairs
+1% human
+
+rest is 1000 bacteria
+
+
+power law -0.3
+
+
+according to http://www.illumina.com/technology/paired_end_sequencing_assay.ilmn
+
+
+The unique paired-end sequencing protocol allows the end user to choose the length of the insert (200–500 bp) and sequence either end of the insert, generating highly quality,
