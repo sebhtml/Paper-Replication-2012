@@ -1,8 +1,15 @@
 This is the code used to validate the correctness of contigs
 generated with Ray Meta. The simulated sample with 100 bacterial genomes
-was used here.
+(or 1000 genomes) was used here.
+
+
+Basically, the script uses MUMmer (nucmer) and script to parse and analyze
+MUMmer files.
+
+
 
 Upstream products are /rap/nne-790-ab/projects/Meta-simulation/Sample-100.dir/Ray-100.2012-05-26/Assembly/{Contigs,Scaffolds}.fasta
 
 
-Scripts to validate assemblies were fetched from the project Ray-TestSuite/ at https://github.com/sebhtml/Ray-TestSuite
+These scripts to validate assemblies were fetched from the project Ray-TestSuite/
+at https://github.com/sebhtml/Ray-TestSuite
