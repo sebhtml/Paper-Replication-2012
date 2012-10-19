@@ -1,0 +1,2 @@
+        %  & numberOfContigs &scaffolds & bases & meanSize  & n50  & max   & coverage   & misassembledContigs & misassembledScaffolds & mismatches & indels
+ RayMeta & 196809 & 138809 & 2775043104 & 14100 & 82575 &  2001896 &  0.8465 & 2638 & 7118 & 59856 & 13122 \\
