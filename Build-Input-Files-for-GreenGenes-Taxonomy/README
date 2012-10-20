@@ -1,0 +1,25 @@
+These scripts are for GreenGenes version gg_2011_1.
+
+They may not work with different versions of GreenGenes if the
+file format changed.
+
+These scripts will generate 3 files to be used with Ray Communities:
+
+- TreeOfLife-Edges.tsv  (each line has: parent	child)
+- Taxon-Names.tsv       (each line has: identifier	taxon name	rank)
+- Genome-to-Taxon.tsv (each line has: GenBank identifier	taxon identifier)
+
+
+The entry point is main.sh
+
+This script may not work correclty when downloading files from Amazon EC2 because
+GreenGenes are protected with:
+
+- an expiry date;
+- a Amazon Web Services key;
+- a signature.
+
+
+Also, the code that generates gi_to_accession.txt  needs access to all reference
+genomes in NCBI, see main.sh
+
