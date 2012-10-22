@@ -1,3 +1,0 @@
-./SRX030842.Ray-Communities-2012-10-02.3/BiologicalAbundances/Bacteria-Genomes/SequenceAbundances.xml.tsv
-./SRX030842.Ray-Communities-2012-10-02.3/BiologicalAbundances/NCBI-Bacteria_DRAFT/SequenceAbundances.xml.tsv
-

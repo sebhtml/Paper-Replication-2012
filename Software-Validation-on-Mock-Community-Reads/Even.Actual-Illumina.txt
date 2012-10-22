@@ -1,2 +1,0 @@
-./SRX055380.Ray-Communities-2012-10-21.1-64/BiologicalAbundances/Bacteria-Genomes/SequenceAbundances.xml
-./SRX055380.Ray-Communities-2012-10-21.1-64/BiologicalAbundances/NCBI-Bacteria_DRAFT/SequenceAbundances.xml

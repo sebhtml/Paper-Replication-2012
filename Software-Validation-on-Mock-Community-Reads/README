@@ -40,5 +40,10 @@ Job files were generated with the provided template.
 
 
 
-To extract profiles from XML files, use Convert.sh
+These files were used to get the actual results for Ray Communities:
+
+./SRX055380.Ray-Communities-2012-10-21.1-64/BiologicalAbundances/0.Profile.TaxonomyRank=species.tsv
+./SRX030841.Ray-Communities-2012-10-21.1-64/BiologicalAbundances/0.Profile.TaxonomyRank=species.tsv
+./SRX030842.Ray-Communities-2012-10-21.1-64/BiologicalAbundances/0.Profile.TaxonomyRank=species.tsv
+./SRX055381.Ray-Communities-2012-10-21.1-64/BiologicalAbundances/0.Profile.TaxonomyRank=species.tsv
 
