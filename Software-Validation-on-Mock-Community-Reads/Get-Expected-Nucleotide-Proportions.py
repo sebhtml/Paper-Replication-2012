@@ -142,8 +142,8 @@ while i<count:
 	evenRatio=renderForScreen(evenRatio)
 	staggeredRatio=renderForScreen(staggeredRatio)
 
-	name=targets[i][0].split()
-	name=name[0]+" "+name[1]
+	name=targets[i][0]
+#	name=name[0]+" "+name[1]
 
 	print "\\textit{"+name+"} & "+str(copiesPerGenome)+" & "+str(renderForScreen(genomeLength)),
 	print " & "+str(evenCount)+" & "+str(evenRatio)+"\\% & "+renderForScreen(evenIllumina[i]*100)+"\\% &",
