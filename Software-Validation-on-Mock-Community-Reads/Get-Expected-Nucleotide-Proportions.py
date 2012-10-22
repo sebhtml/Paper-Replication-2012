@@ -59,6 +59,42 @@ while i<count:
 
 i=0
 
+even454=[]
+
+for line in open("Even.Actual.454.txt"):
+	if line[0]=="#":
+		continue
+
+	even454.append(float(line.split("\t")[1]))
+
+
+evenIllumina=[]
+
+for line in open("Even.Actual.Illumina.txt"):
+	if line[0]=="#":
+		continue
+
+	evenIllumina.append(float(line.split("\t")[1]))
+
+staggeredIllumina=[]
+
+for line in open("Staggered.Actual.Illumina.txt"):
+	if line[0]=="#":
+		continue
+
+	staggeredIllumina.append(float(line.split("\t")[1]))
+
+staggered454=[]
+
+for line in open("Staggered.Actual.454.txt"):
+	if line[0]=="#":
+		continue
+
+	staggered454.append(float(line.split("\t")[1]))
+
+
+
+
 print '\documentclass{article}'
 print "\\usepackage{lscape}"
 print '\\begin{document}'
@@ -71,9 +107,9 @@ print "\\label{TableMocks}"
 print "\\begin{tabular}{lllllllllll}"
 print '\hline'
 print "Species & 16S& Genome &  \multicolumn{4}{c}{Even mixture} &  \multicolumn{4}{c}{Staggered mixture} \\\\"
-print " &copies & length & \multicolumn{2}{c}{Expected} & \multicolumn{2}{c}{Actual} & \multicolumn{2}{c}{Expected} & \multicolumn{2}{c}{Actual}  \\\\"
-print "       & per & (Mb) & 16S & nucleotide & Illumina & 454   & 16S copies & nucleotide & Illumina & 454    \\\\"
-print " & genome &  & copies & proportion & & & copies & proportion\\\\"
+print " &copies & length & \multicolumn{2}{c}{Expected} & \multicolumn{2}{c}{Actual nucleotide} & \multicolumn{2}{c}{Expected} & \multicolumn{2}{c}{Actual nucleotide}  \\\\"
+print "       & per & (Mb) & 16S & nucleotide & \multicolumn{2}{c}{proportion} & 16S copies & nucleotide & \multicolumn{2}{c}{proportion}   \\\\"
+print " & genome &  & copies & proportion & Illumina& 454 & copies & proportion & Illumina & 454 \\\\"
 print '\hline'
 
 def renderForScreen(text):
@@ -110,7 +146,10 @@ while i<count:
 	name=name[0]+" "+name[1]
 
 	print "\\textit{"+name+"} & "+str(copiesPerGenome)+" & "+str(renderForScreen(genomeLength)),
-	print " & "+str(evenCount)+" & "+str(evenRatio)+"\\% & && "+str(staggeredCount)+" & "+str(staggeredRatio)+"\\\\"
+	print " & "+str(evenCount)+" & "+str(evenRatio)+"\\% & "+renderForScreen(evenIllumina[i]*100)+"\\% &",
+	print " "+renderForScreen(even454[i]*100)+ "\\% & "+str(staggeredCount)+" & "+str(staggeredRatio)+" \\% ",
+	print " & " +renderForScreen(staggeredIllumina[i]*100)+"\\%",
+	print " & " +renderForScreen(staggered454[i]*100)+"\\% \\\\"
 
 	i+=1
 
