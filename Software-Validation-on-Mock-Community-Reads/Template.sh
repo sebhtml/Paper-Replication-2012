@@ -1,10 +1,10 @@
 #!/bin/bash
-#PBS -N __SAMPLE__.Ray-Communities-2012-10-16.1-32
-#PBS -o __SAMPLE__.Ray-Communities-2012-10-16.1-32.stdout
-#PBS -e __SAMPLE__.Ray-Communities-2012-10-16.1-32.stderr
+#PBS -N __SAMPLE__.Ray-Communities-2012-10-21.1-64
+#PBS -o __SAMPLE__.Ray-Communities-2012-10-21.1-64.stdout
+#PBS -e __SAMPLE__.Ray-Communities-2012-10-21.1-64.stderr
 #PBS -A nne-790-ab
 #PBS -l walltime=16:00:00
-#PBS -l nodes=4:ppn=8
+#PBS -l nodes=8:ppn=8
 cd $PBS_O_WORKDIR
 
 #. /mnt/scratch_mp2/corbeil/corbeil_group/software/NGS-Pipelines/LoadModules.sh
@@ -13,11 +13,11 @@ cd $PBS_O_WORKDIR
 #root=/mnt/scratch_mp2/corbeil/corbeil_group/genomes/
 root=/rap/nne-790-ab/genomes/
 
-mpiexec -n 32 \
--output-filename __SAMPLE__.Ray-Communities-2012-10-16.1-32 \
+mpiexec -n 64 \
+-output-filename __SAMPLE__.Ray-Communities-2012-10-21.1-64 \
 Ray \
  -o \
- __SAMPLE__.Ray-Communities-2012-10-16.1-32 \
+ __SAMPLE__.Ray-Communities-2012-10-21.1-64 \
  -k \
  21 \
  -s __SAMPLE__.fastq.gz \
@@ -41,5 +41,5 @@ Ray \
  $root/taxonomy/last-build/TreeOfLife-Edges.tsv \
  $root/taxonomy/last-build/Taxon-Names.tsv
 
-mv __SAMPLE__.Ray-Communities-2012-10-16.1-32.* __SAMPLE__.Ray-Communities-2012-10-16.1-32
+mv __SAMPLE__.Ray-Communities-2012-10-21.1-64.* __SAMPLE__.Ray-Communities-2012-10-21.1-64
 

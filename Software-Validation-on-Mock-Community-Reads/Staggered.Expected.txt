@@ -1,4 +1,7 @@
 # Organism (strain#)-Target 16S copies in PCR
+# based on http://downloads.hmpdacc.org/data/HMMC/HMPRP_sT1-Mock.pdf
+# some values are different in 
+# http://www.nature.com/nature/journal/v486/n7402/full/nature11209.html#/supplementary-information
 Acinetobacter baumannii (ATCC 17978)	10000
 Actinomyces odontolyticus (ATCC 17982)	1000
 Bacillus cereus (ATCC 10987)	100000
@@ -15,9 +18,9 @@ Methanobrevibacter smithii (ATCC 35061)	1000000
 Neisseria meningitidis (ATCC BAA-335)	10000
 Propionibacterium acnes (DSM 16379)	10000
 Pseudomonas aeruginosa (ATCC 47085)	100000
-Rhodobacter sphaeroides (ATCC 17023)	1000000
-Staphylococcusaureus (ATCC BAA-1718)	100000
-Staphylococcus epidermidis (ATCC 12228)	1000000
-Streptococcus agalactiae (ATCC BAA-611)	100000
-Streptococcus mutans (ATCC 700610)	1000000
-Streptococcus pneumoniae (ATCC BAA-334)	1000
+Rhodobacter sphaeroides (ATCC 17023)	100000
+Staphylococcus aureus (ATCC BAA-1718)	1000000
+Staphylococcus epidermidis (ATCC 12228)	100000
+Streptococcus agalactiae (ATCC BAA-611)	1000000
+Streptococcus mutans (ATCC 700610)	1000
+Streptococcus pneumoniae (ATCC BAA-334)	100000
